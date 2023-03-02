@@ -1,0 +1,428 @@
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+  }
+
+
+@media (max-width: 1170px) {
+
+  .section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  max-height: none;
+}
+  .project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .project-item p{
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .project-item h3{
+    font-size: 14px;
+  }
+
+
+
+} /* end @media max<767 */
+
+
+  body {
+    background: linear-gradient(to right, #DECBA4, #3E5151); /* fallback for old browsers */
+    background: linear-gradient(to right, #DECBA4, #3E5151); /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(ellipse at right bottom, #7e98ad 5%, #cc822dc7 25%, #63451ddc 50%, #12b342 100%);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Inter", sans-serif;
+  color: white;
+      }
+
+.section {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+      
+      /* Add a border-bottom to the section, except for the last one */
+      .section:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+      }
+
+      .container {
+        background-color: white(0, 0, 0, 0.237);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      
+      .container.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .column {
+        flex: 50%;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 72px;
+        margin-bottom: 40px;
+      }
+      h2 {
+        color:	#301934;
+        font-size: 36px;
+        text-align: center;
+        padding-top:20px;
+      }
+
+      h4 {
+        color: 	#301934;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+
+  .photo-container {
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.circle-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 20vw; /* use viewport width units */
+  max-width: 200px; /* set a maximum width */
+  height: 20vw; /* use viewport width units */
+  max-height: 200px; /* set a maximum height */
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+  .contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-info a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-info a:hover {
+  color: #ccc;
+}
+
+.contact-info a i {
+  color: #fff;
+}
+
+.contact-info a:hover i {
+  color: #ccc;
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.scroll-down-arrow a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  line-height: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-down-arrow a:hover {
+  transform: translateY(3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fa-chevron-down {
+  position: relative;
+  top: 3px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+
+.card {
+  background-color: rgba(0, 0, 0, 0.338);
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 320px; /* card width (300px) + space (20px) */
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  width: 300px;
+  height: auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allow cards to wrap to new lines */
+  margin: 0 -20px; /* offset the margin-right on the last card */
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card h3 {
+  color: white;
+  font-size: 24px;
+  margin: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card {
+  font-size: 14px;
+  margin: 20px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card ul li {
+  margin: 5px;
+}
+
+.card ul li:before {
+  display: none;
+}
+
+#card1:hover li:first-child:before {
+  content: "Junior Level";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:#301934;
+}
+
+
+#card1:hover li:nth-child(4):before{
+  content: "Entry Level";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:#301934;
+}
+
+#card1:hover li:nth-child(8):before{
+  content: "Basic Level";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:#301934;
+}
+
+#card2:hover li:first-child:before {
+  content: "Framework";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:#301934;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+#card2:hover li:nth-child(2):before{
+  content: "IDEs";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:#301934;
+}
+
+#card3:hover li:first-child:before {
+  content: "Network Security";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:#301934;
+}
+
+#card3:hover li:nth-child(4):before{
+  content: "DevOps";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:#301934;
+}
+
+#card3:hover li:nth-child(6):before{
+  content: "UI Design";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:#301934;
+}
+
+
+
+
+
+
+.card.active {
+  transform: translateY(0);
+  z-index: 1;
+  }
+
+.card li{
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: medium;
+  font: bold;
+    }
+
+
+
+
+.project h3 {
+  padding-top: 5px;
+  font-family: 'Apple System', sans-serif;
+  font-size: 16px;
+}
+
+.project-container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+
+.project-item {
+  width: calc((100% - 20px) / 3);
+  max-width: 280px;
+  padding:10px;
+  height:400px;
+  background-color: #000000a2;
+  border-radius:10px; ;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-item a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-item p{
+  font-size: 14px;
+}
+
+
+
+.project-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 210px;
+  max-height: 250px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+
+.project-item text{
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 210px;
+  max-height: 250px;
+  margin: auto;
+text-align: center;
+font-size: 26px;
+}
+
+.project-item h3 {
+    color:#301934;
+    font-size: 15px;
+  margin-top: 10px;
+}
+
+.project-item p {
+  color: white;
+  margin-top: 5px;
+}
+
+.cp-text{ color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);}
